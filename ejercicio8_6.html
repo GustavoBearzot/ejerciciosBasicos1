@@ -1,0 +1,75 @@
+<!-- 1- Crea una función que se cargue al inicio y que muestre la suma de dos números. 
+    2- Crea dos radiobuttons en HTML,
+    cuando uno de ellos se seleccione que muestre un mensaje diciendo que opción se selecciono.
+    3- crear un input y un button, cuando le demos al boton, se añadira el texto que hemos puesto en el input en un div vacio.
+    Recuerda se añadirá el texto, no se machaca lo que haya en el div.
+    4- Crear dos input de números y un botón, al pulsar el botón,
+    mostrar en un alert quien es el mayor de los dos. 
+    5- Crear un botón que al pulsarlo genere una lista de 10 números
+    aleatorios en un select vacio. Al pulsar de nuevo, se reseteara la lista. 
+    6- Dado un input y un boton, escribir nombres de personas (no controlamos nada de momento) y 
+    lo mostramos en una lista desordenada. */ <!DOCTYPE html>
+    -->
+<html lang="en">
+
+<head>
+    <title>ejercicio1</title>
+
+</head>
+
+<body>
+    <h1>Hola</h1>
+
+    <button type="button" onclick="suma()">pulsa para sumar 2 numeros</button>
+
+    <div class="radio">
+        <h2>Radio Buttons</h2>
+
+        <input type="radio" name="mujer" onclick=clickaction(this) id="mujer">
+        <label for="mujer">Mujer</label>
+
+        <input type="radio" name="hombre" onclick=clickaction(this) id="hombre">
+        <label for="hombre">Hombre</label>
+
+
+    </div>
+    <form action="" id="form">
+        <label for="dato">Escriba algo</label>
+        <input type="text" id="dato1" name="dato1" placeholder="dato1">
+        <button type="button" onclick="getData()">Envíe su mensaje</button>
+        <!--<div id="text"><input type="text" id="mensaje" name="idmop"></div>-->
+        <div id="cont1"><a href="javascript:getData()"></a></div>
+
+    </form>
+
+    <form>
+        <input type="text" id="num1" />
+        <input type="text" id="num2" />
+        <button type="button" onclick="numMayor()">cual es el mayor?</button>
+    </form>
+    <form>
+        <p>
+            <button type="button" onclick="numAlea()">click</button>
+            <select id="numAleatorio">
+            </select>
+        </p>
+    </form>
+    <form action="" id="form">
+        <label for="dato">Escriba nombres</label>
+        <input type="text" id="dato2" name="dato2" placeholder="dato2">
+        <button type="button" onclick="getData2()">Envíe su mensaje</button>
+        <!--<div id="text"><input type="text" id="mensaje" name="idmop"></div>-->
+        <ul id="cont2"><a href="javascript:getData2()"></a></ul>
+
+    </form>
+    <div>
+        <ul id="lista-nombres"></ul>
+    </div>
+    </div>
+
+
+
+    <script src="script8_6.js"></script>
+</body>
+
+</html>
